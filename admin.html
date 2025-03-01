@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Ripo Team Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function addUser(event) {
+            event.preventDefault();
+            const username = document.getElementById('new-username').value;
+            const password = document.getElementById('new-password').value;
+            // Add user logic here
+            alert(`User ${username} added`);
+        }
+
+        function deleteUser(username) {
+            // Delete user logic here
+            alert(`User ${username} deleted`);
+        }
+
+        function editUser(username) {
+            // Edit user logic here
+            alert(`User ${username} edited`);
+        }
+    </script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Admin Panel</h1>
+        </header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="warnings.html">Warnings</a></li>
+                <li><a href="bans.html">Bans</a></li>
+                <li><a href="tasks.html">To Do Tasks</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <h3>Manage Users</h3>
+                <form onsubmit="addUser(event)">
+                    <div class="input-group">
+                        <label for="new-username">Username</label>
+                        <input type="text" id="new-username" name="new-username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="new-password">Password</label>
+                        <input type="password" id="new-password" name="new-password" required>
+                    </div>
+                    <button type="submit">Add User</button>
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ripo team</td>
+                            <td>
+                                <button onclick="editUser('ripo team')">Edit</button>
+                                <button onclick="deleteUser('ripo team')">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more users here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="card">
+                <h3>Assign Warnings, Bans, Tasks, and Attendance</h3>
+                <p>Admin functionalities to assign warnings, bans, tasks, and attendance will go here.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

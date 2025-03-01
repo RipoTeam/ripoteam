@@ -1,0 +1,166 @@
+:root {
+  --sidebar-width: 280px;
+  --header-height: 70px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+/* Login Page Styles */
+.form-control-lg {
+  padding: 1rem 1.25rem;
+  font-size: 1.1rem;
+}
+
+/* Dashboard Styles */
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #2c3e50;
+  color: white;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+}
+
+.sidebar-header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 2rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.sidebar-menu a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.sidebar-menu i {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.dashboard-card {
+  min-height: 500px;
+}
+
+.stats-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.stats-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.item-list {
+  padding: 1rem;
+}
+
+.item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.btn-action {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Add these styles to your existing CSS */
+.welcome-section {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    padding: 3rem;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.stats-card {
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-icon {
+    color: #4a90e2;
+    margin-bottom: 1rem;
+}
+
+.activity-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-title {
+    font-weight: 600;
+}
+
+.activity-status, .activity-date {
+    font-size: 0.9rem;
+    color: #666;
+}
